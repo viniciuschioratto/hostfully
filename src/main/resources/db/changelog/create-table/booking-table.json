@@ -1,0 +1,74 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "author": "Vinicius Chioratto",
+        "changes": [
+          {
+            "createTable": {
+              "columns": [
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false,
+                      "primaryKey": true
+                    },
+                    "name": "id",
+                    "type": "integer"
+                  }
+                },
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false
+                    },
+                    "name": "start_period",
+                    "type": "date"
+                  }
+                },
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false
+                    },
+                    "name": "end_period",
+                    "type": "date"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "guest_document_id",
+                    "type": "integer"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "guest_first_name",
+                    "type": "varchar(255)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "guest_last_name",
+                    "type": "varchar(255)"
+                  }
+                },
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false
+                    },
+                    "name": "property_id",
+                    "type": "integer"
+                  }
+                }
+              ],
+              "tableName": "booking"
+            }
+          }
+        ],
+        "id": "booking"
+      }
+    }
+  ]
+}

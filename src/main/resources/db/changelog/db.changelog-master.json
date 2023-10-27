@@ -1,0 +1,22 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "create-table/booking-table.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "create-table/block-table.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "create-table/block-seq.json",
+        "relativeToChangelogFile": true
+      }
+    }
+  ]
+}

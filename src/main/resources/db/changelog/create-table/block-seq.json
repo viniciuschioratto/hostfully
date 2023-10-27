@@ -1,0 +1,17 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "create-block-seq",
+        "author": "Vinicius Chioratto",
+        "changes": [
+          {
+            "createSequence": {
+              "sequenceName": "BLOCK_SEQ"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
